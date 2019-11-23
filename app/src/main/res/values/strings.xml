@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FlashBeepShake</string>
+    <string name="beep">beep</string>
+    <string name="flashLight">flashLight</string>
+    <string name="vibrate">vibrate</string>
+    <string name="vibrateDevice"><![CDATA[<---- Activate Vibrate]]></string>
+    <string name="flashText"><![CDATA[<---- Activate Flash]]></string>
+    <string name="beepText"><![CDATA[<---- Activate Sound]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flashbeepshake">FlashBeepShake</string>
+    <string name="connect_to_bt">Connect to BT</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F246464E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/flashBeepShake"
+        android:layout_width="352dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:background="#C181EBBB"
+        android:gravity="center_horizontal|center_vertical"
+        android:scaleType="fitCenter"
+        android:text="@string/flashbeepshake"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#F7F7F7"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/connectBT"
+        android:layout_width="156dp"
+        android:layout_height="36dp"
+        android:text="@string/connect_to_bt"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashBeepShake"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="346dp"
+        android:layout_height="436dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#81268669"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flashBeepShake">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="#E88F8B8B" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CFCACA"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/vibrate"
+                    android:layout_width="79dp"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/vibrate"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/thoseicons" />
+
+                <TextView
+                    android:id="@+id/vibrateDevice"
+                    android:layout_width="251dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:background="#C181EBBB"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/vibrateDevice"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="#E88F8B8B" />
+
+            <LinearLayout
+                android:id="@+id/beepLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CFCACA"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/beep"
+                    android:layout_width="79dp"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center"
+                    android:background="#00999494"
+                    android:contentDescription="@string/beep"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/thoseicons1" />
+
+                <TextView
+                    android:id="@+id/beepText"
+                    android:layout_width="250dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:background="#C181EBBB"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/beepText"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="#E88F8B8B"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CFCACA"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/flashLight"
+                    android:layout_width="79dp"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/flashLight"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/smashicons" />
+
+                <TextView
+                    android:id="@+id/flashText"
+                    android:layout_width="250dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:background="#C181EBBB"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/flashText"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:background="#E88F8B8B"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
